@@ -1,0 +1,48 @@
+<html ng-app="ta">
+<head>
+  <meta charset="utf-8"/>
+  <script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<budy>
+  <div class="container">
+    <div ng-controller="tc">
+      <p>Hallo {{"welt"}}</p>
+      <p>{{counter}}</p>
+      <button ng-click="alert('hi')">alert</button>
+      <button ng-click="count()">plus1</button>
+      </div>
+    <div ng-controller="test">
+      <div>
+        <button ng-click="open()">dialog</button>
+        <dialog role="dialog" >abc</dialog>
+      </div>
+      </div>
+        <!--
+        <div ng-controller="dialog">
+          <div>
+            <button ng-click="showAlert()" class="md-raised md-warn">
+              Employee Alert!
+            </button>
+          </div>
+          <div>
+            <button ng-click="showDialog($event)" class="md-raised">
+              Custom Dialog
+            </button>
+          </div>
+          <div>
+            <button ng-click="closeAlert()" ng-disabled="!hasAlert()" class="md-raised">
+              Close Alert
+            </button>
+          </div>
+          <div>
+            <button ng-click="showGreeting($event)" class="md-raised md-primary">
+              Greet Employee
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+</budy>
+</html>
